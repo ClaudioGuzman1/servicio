@@ -147,10 +147,10 @@
     <div class="field">
       <label for="familia">Casa de salida ($D)</label>
       <select id="familia">
-        <option value="**Familia Castillo Cázares**">Familia Castillo Cázares</option>
-        <option value="**Familia Ocampo Pérez**">Familia Ocampo Pérez</option>
-        <option value="**Familia Quintero López**">Familia Quintero López</option>
-        <option value="**Familia Pérez García**">Familia Pérez García</option>
+        <option value="*Familia Castillo Cázares*">Familia Castillo Cázares</option>
+        <option value="*Familia Ocampo Pérez*">Familia Ocampo Pérez</option>
+        <option value="*Familia Quintero López*">Familia Quintero López</option>
+        <option value="*Familia Pérez García*">Familia Pérez García</option>
       </select>
     </div>
 
@@ -170,14 +170,14 @@
 const A = ['☀️','☕','⚡','🌟','🌷','🌼','🎒','🎯','🏆','💥','📌','📢','📢','📣','🔑','🔥','🕊️','🗓️','🥳','🚀'];
 
 const B = [
-  "**¡Hola, queridísimos hermanos!**",
-  "**¡Muy buenos días, queridísimos hermanos!**",
-  "**¡Muy buenos días, queridos hermanos!**",
-  "**¡Muy buenos días, hermanos queridos!**",
-  "**¡Hola, queridísimos hermanos!**",
-  "**¡Muy buen día, queridísimos hermanos!**",
-  "**¡Muy buen día, queridos hermanos!**",
-  "**¡Muy buen día, hermanos queridos!**"
+  "*¡Hola, queridísimos hermanos!*",
+  "*¡Muy buenos días, queridísimos hermanos!*",
+  "*¡Muy buenos días, queridos hermanos!*",
+  "*¡Muy buenos días, hermanos queridos!*",
+  "*¡Hola, queridísimos hermanos!*",
+  "*¡Muy buen día, queridísimos hermanos!*",
+  "*¡Muy buen día, queridos hermanos!*",
+  "*¡Muy buen día, hermanos queridos!*"
 ];
 
 const C = [
@@ -201,7 +201,7 @@ function pick(arr){
 }
 
 function mdToHtml(str){
-  // convierte **negritas** a <strong> para la vista previa
+  // convierte *negritas* a <strong> para la vista previa
   return str.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
 }
 
